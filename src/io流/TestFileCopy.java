@@ -9,9 +9,7 @@ public class TestFileCopy {
     public static void main(String[] args) throws IOException {
         String resourcePath = "E:/天天看/";
         String targetPath = "E:/IOTest/";
-
         copyFilder(resourcePath, targetPath);
-
     }
 
     private static void copyFilder(String resourcePath, String targetPath) throws IOException {
@@ -33,10 +31,7 @@ public class TestFileCopy {
             } else {
                 copyFile(file.getPath(), targetPath+file.getName());
             }
-
         }
-
-
     }
 
     private static void copyDir(String resourcePath, String targetPath) {
@@ -45,7 +40,6 @@ public class TestFileCopy {
         if (!taFile.exists()) {
             taFile.mkdirs();
         }
-
 
         File file = new File(resourcePath);
         File[] files = file.listFiles();
