@@ -4,6 +4,7 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.nio.charset.Charset;
 import java.nio.charset.StandardCharsets;
 
 /**
@@ -11,7 +12,7 @@ import java.nio.charset.StandardCharsets;
  */
 public class TestReaderWriterStream {
     public static void main(String[] args) throws IOException {
-        FileReader fileReader = new FileReader("E:/install-1.txt", StandardCharsets.UTF_16LE);
+        FileReader fileReader = new FileReader("E:/install-1.txt");
         FileWriter fileWriter = new FileWriter("E:/install-2.txt", StandardCharsets.UTF_16LE);
 
         char[] chars = new char[1024];
