@@ -96,4 +96,34 @@
         <param-value>UTF-8</param-value>
     </context-param>
 
+    <!--配置servletRequest-->
+    <servlet>
+        <servlet-name>ServletRequestDemo</servlet-name>
+        <servlet-class>com.hyh.ServletRequestDemo</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ServletRequestDemo</servlet-name>
+        <url-pattern>/requestDemo</url-pattern>
+    </servlet-mapping>
+
+    <!--反射封装对象-->
+    <servlet>
+        <servlet-name>ServletRequestDemo1</servlet-name>
+        <servlet-class>com.hyh.ServletRequestDemo1</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ServletRequestDemo1</servlet-name>
+        <url-pattern>/requestDemo1</url-pattern>
+    </servlet-mapping>
+
+    <!--使用工具类封装对象-->
+    <servlet>
+        <servlet-name>ServletRequestDemo2</servlet-name>
+        <servlet-class>com.hyh.ServletRequestDemo2</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ServletRequestDemo2</servlet-name>
+        <url-pattern>/requestDemo2</url-pattern>
+    </servlet-mapping>
+
 </web-app>
