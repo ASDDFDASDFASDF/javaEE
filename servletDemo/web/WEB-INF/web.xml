@@ -80,4 +80,20 @@
         <url-pattern>/config</url-pattern>
     </servlet-mapping>
 
+
+    <servlet>
+        <servlet-name>servletContextDemo</servlet-name>
+        <servlet-class>com.hyh.ServletContextDemo</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>servletContextDemo</servlet-name>
+        <url-pattern>/servletContext</url-pattern>
+    </servlet-mapping>
+    
+    <!--配置servletContext-->
+    <context-param>
+        <param-name>globalEnCoding</param-name>
+        <param-value>UTF-8</param-value>
+    </context-param>
+
 </web-app>
