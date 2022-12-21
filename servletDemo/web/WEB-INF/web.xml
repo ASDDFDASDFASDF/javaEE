@@ -126,4 +126,15 @@
         <url-pattern>/requestDemo2</url-pattern>
     </servlet-mapping>
 
+
+    <servlet>
+        <servlet-name>ServletRequestDemo3</servlet-name>
+        <servlet-class>com.hyh.ServletRequestDemo3</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ServletRequestDemo3</servlet-name>
+        <url-pattern>/requestDemo3</url-pattern>
+    </servlet-mapping>
+
+
 </web-app>
