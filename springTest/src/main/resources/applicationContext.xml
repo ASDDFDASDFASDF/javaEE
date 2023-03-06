@@ -19,7 +19,7 @@
         <!--声明切面-->
         <aop:aspect ref="aspect">
             <!--切面：切点+通知-->
-            <aop:before method="run" pointcut="execution(public void com.hyh.proxy.aop.UserServiceImpl.run())"></aop:before>
+            <aop:before method="beforeMethod" pointcut="execution(public void com.hyh.proxy.aop.UserServiceImpl.run())"></aop:before>
         </aop:aspect>
     </aop:config>
 

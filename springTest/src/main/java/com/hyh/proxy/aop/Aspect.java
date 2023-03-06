@@ -2,7 +2,7 @@ package com.hyh.proxy.aop;
 
 public class Aspect {
 
-    public void  run(){
+    public void  beforeMethod(){
         System.out.println("runing");
     }
 
