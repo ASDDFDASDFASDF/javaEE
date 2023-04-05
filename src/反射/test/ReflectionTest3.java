@@ -7,11 +7,10 @@ import java.util.List;
 import java.util.Map;
 
 /**
- *
  * 使用反射获取泛型信息
  */
 public class ReflectionTest3 {
-    public void  methed3(Map<String,Object> map, List<String> String){
+    public void methed3(Map<String, Object> map, List<String> String) {
 
     }
 

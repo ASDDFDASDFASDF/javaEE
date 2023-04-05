@@ -2,7 +2,7 @@ package 反射.dto;
 
 import java.io.Serializable;
 
-public final class Dog extends Animal implements Serializable,Cloneable {
+public final class Dog extends Animal implements Serializable, Cloneable {
     private String type;//品种
 
     public Dog() {
@@ -27,7 +27,7 @@ public final class Dog extends Animal implements Serializable,Cloneable {
         System.out.println("====Dog eat()=======");
     }
 
-    private void guard(){
+    private void guard() {
 
     }
 }

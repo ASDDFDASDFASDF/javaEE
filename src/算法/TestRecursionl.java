@@ -10,8 +10,8 @@ public class TestRecursionl {
         //不适用递归 计算  1*2*3*4...*n
         long result = 1;
         long n = 10;
-        for (int i=1; i<= n; i++){
-            result = result*i;
+        for (int i = 1; i <= n; i++) {
+            result = result * i;
         }
         System.out.println(result);
 
@@ -27,7 +27,7 @@ public class TestRecursionl {
          */
 
         int a = 10;
-        System.out.println(getValue( a));
+        System.out.println(getValue(a));
 
         /**
          * 斐波那契数列
@@ -43,9 +43,9 @@ public class TestRecursionl {
          * 选择排序
          * 30，25，40，15，100，65，20
          */
-        
-        int arr[] = {30,25,40,15,100,65,20};
-        
+
+        int arr[] = {30, 25, 40, 15, 100, 65, 20};
+
         ArraySort(arr);
 
 
@@ -54,7 +54,7 @@ public class TestRecursionl {
     private static void ArraySort(int[] arr) {
 
         for (int i = 1; i < arr.length; i++) {
-            for (int j = 0; j< arr.length; j++){
+            for (int j = 0; j < arr.length; j++) {
                 if (arr[j] > arr[i]) {
                     int t = arr[j];
                     arr[j] = arr[i];
@@ -68,7 +68,7 @@ public class TestRecursionl {
     private static int getFeibo(int m) {
         int result = 1;
         if (m > 2) {
-            result = getFeibo(m-1) + getFeibo(m-2);
+            result = getFeibo(m - 1) + getFeibo(m - 2);
         } else {
             return result;
         }
@@ -78,7 +78,7 @@ public class TestRecursionl {
     private static long getValue(int a) {
         long result = 1;
         if (a > 1) {
-            result = a * getValue(a -1);
+            result = a * getValue(a - 1);
         } else {
             return 1;
         }

@@ -13,7 +13,7 @@ public class TestBufferedReader {
         BufferedWriter bw = new BufferedWriter(new FileWriter("E:/aa.txt"));
 
         String s = br.readLine();
-        while (s != null ){
+        while (s != null) {
             System.out.println(s);
             //写入当前读取到的数据信息
             bw.write(s);

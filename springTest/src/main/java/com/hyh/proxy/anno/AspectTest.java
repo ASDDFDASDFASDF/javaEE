@@ -13,7 +13,7 @@ public class AspectTest {
     private UserServiceImpl userService;
 
     @Test
-    public void test(){
+    public void test() {
         userService.run();
     }
 }

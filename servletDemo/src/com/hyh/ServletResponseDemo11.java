@@ -28,7 +28,7 @@ public class ServletResponseDemo11 extends HttpServlet {
          *
          * application/octet-stream  消息头参数 应用的类型为字节流
          */
-        resp.setHeader("Content-Type","application/octet-stream");
+        resp.setHeader("Content-Type", "application/octet-stream");
         //设置响应头以下载方式打开附件
         /**
          * Content-Disposition: 处理形式
@@ -42,7 +42,7 @@ public class ServletResponseDemo11 extends HttpServlet {
         byte[] bytes = new byte[1024];
         int len = 0;
         while ((len = bis.read(bytes)) != -1) {
-            outputStream.write(bytes, 0 , len);
+            outputStream.write(bytes, 0, len);
         }
 
         //关闭流

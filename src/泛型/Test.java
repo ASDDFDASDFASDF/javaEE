@@ -24,7 +24,7 @@ public class Test {
 
         //泛型接口
         Generic generic = new GenericImpl();
-        generic.show( new Techer());
+        generic.show(new Techer());
 
     }
 }

@@ -24,33 +24,33 @@
     </servlet-mapping>
 
     <!--servlet生命周期-->
-<!--    <servlet>
-        <servlet-name>ServletDemo2</servlet-name>
-        <servlet-class>com.hyh.ServletDemo2</servlet-class>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>ServletDemo2</servlet-name>
-        <url-pattern>/servletDemo2</url-pattern>
-    </servlet-mapping>
+    <!--    <servlet>
+            <servlet-name>ServletDemo2</servlet-name>
+            <servlet-class>com.hyh.ServletDemo2</servlet-class>
+        </servlet>
+        <servlet-mapping>
+            <servlet-name>ServletDemo2</servlet-name>
+            <url-pattern>/servletDemo2</url-pattern>
+        </servlet-mapping>
 
-    <servlet>
-        <servlet-name>ServletDemo4</servlet-name>
-        <servlet-class>com.hyh.ServletDemo4</servlet-class>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>ServletDemo4</servlet-name>
-        <url-pattern>/servletDemo4</url-pattern>
-    </servlet-mapping>-->
+        <servlet>
+            <servlet-name>ServletDemo4</servlet-name>
+            <servlet-class>com.hyh.ServletDemo4</servlet-class>
+        </servlet>
+        <servlet-mapping>
+            <servlet-name>ServletDemo4</servlet-name>
+            <url-pattern>/servletDemo4</url-pattern>
+        </servlet-mapping>-->
 
     <!--测试url通配符-->
-<!--    <servlet>
-        <servlet-name>ServletDemo4</servlet-name>
-        <servlet-class>com.hyh.ServletDemo4</servlet-class>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>ServletDemo4</servlet-name>
-        <url-pattern>/servlet/*</url-pattern>
-    </servlet-mapping>-->
+    <!--    <servlet>
+            <servlet-name>ServletDemo4</servlet-name>
+            <servlet-class>com.hyh.ServletDemo4</servlet-class>
+        </servlet>
+        <servlet-mapping>
+            <servlet-name>ServletDemo4</servlet-name>
+            <url-pattern>/servlet/*</url-pattern>
+        </servlet-mapping>-->
 
     <servlet>
         <servlet-name>ServletDemo4</servlet-name>
@@ -89,7 +89,7 @@
         <servlet-name>servletContextDemo</servlet-name>
         <url-pattern>/servletContext</url-pattern>
     </servlet-mapping>
-    
+
     <!--配置servletContext-->
     <context-param>
         <param-name>globalEnCoding</param-name>

@@ -1,6 +1,6 @@
 package 反射.dto;
 
-public abstract  class Animal{
+public abstract class Animal {
 
     //
     public String nickName;
@@ -35,17 +35,17 @@ public abstract  class Animal{
         this.age = age;
     }
 
-    public void shout(){
+    public void shout() {
         System.out.println("-----shout()----");
     }
 
-    public void shout(String str){
-        System.out.println("-----shout()----"+str);
+    public void shout(String str) {
+        System.out.println("-----shout()----" + str);
     }
 
-    public void shout(String str,int num){
-        System.out.println("-----shout()----"+str+"  "+num);
+    public void shout(String str, int num) {
+        System.out.println("-----shout()----" + str + "  " + num);
     }
 
-    public abstract  void eat();
+    public abstract void eat();
 }

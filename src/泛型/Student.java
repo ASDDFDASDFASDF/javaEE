@@ -1,7 +1,7 @@
 package 泛型;
 
 public class Student {
-    private String  name = "a";
+    private String name = "a";
 
     public String getName() {
         return name;

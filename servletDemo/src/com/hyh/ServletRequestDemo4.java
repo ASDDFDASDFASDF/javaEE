@@ -15,7 +15,6 @@ import java.io.IOException;
  * 域对象中的数据不丢失
  * 负责转发的servlet转发前后的响应正文会丢失
  * 由转发的目的地来响应
- *
  */
 @WebServlet("/servletDemo4")
 public class ServletRequestDemo4 extends HttpServlet {
@@ -23,7 +22,7 @@ public class ServletRequestDemo4 extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
-        req.setAttribute("address","张村");
+        req.setAttribute("address", "张村");
         //获取请求转发描述器
         RequestDispatcher rd = req.getRequestDispatcher("/servletDemo5");
         rd.forward(req, resp);

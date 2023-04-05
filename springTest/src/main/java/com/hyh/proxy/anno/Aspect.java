@@ -10,12 +10,12 @@ public class Aspect {
 
     //前置通知
     @Before("execution(* com.hyh.proxy.anno.*.*(..))")
-    public void  beforeMethod(){
+    public void beforeMethod() {
         System.out.println("runing");
     }
 
     @After("execution(* com.hyh.proxy.anno.*.*(..))")
-    public void eat(){
+    public void eat() {
         System.out.println("aop...eat...");
     }
 }

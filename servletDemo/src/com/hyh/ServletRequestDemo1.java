@@ -26,7 +26,7 @@ public class ServletRequestDemo1 extends HttpServlet {
 
         Map<String, String[]> parameterMap = req.getParameterMap();
         Student student = new Student();
-        for(String key: parameterMap.keySet()){
+        for (String key : parameterMap.keySet()) {
             String[] value = parameterMap.get(key);
 
             //获取属性描述器
@@ -36,9 +36,9 @@ public class ServletRequestDemo1 extends HttpServlet {
                 //获取set方法。
                 Method writeMethod = pd.getWriteMethod();
                 //通过set方法给对象赋值
-                if (value.length>1) {
-                    writeMethod.invoke(student, (Object)value);
-                }else {
+                if (value.length > 1) {
+                    writeMethod.invoke(student, (Object) value);
+                } else {
                     writeMethod.invoke(student, value);
                 }
 

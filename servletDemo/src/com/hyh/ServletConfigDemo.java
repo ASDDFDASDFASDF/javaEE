@@ -26,12 +26,12 @@ public class ServletConfigDemo extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         Enumeration<String> init = config.getInitParameterNames();
-        while (init.hasMoreElements()){
+        while (init.hasMoreElements()) {
             System.out.println(init.nextElement());
 
             String key = init.nextElement();
             String val = config.getInitParameter(key);
-            System.out.println("key:"+key+"val:"+val);
+            System.out.println("key:" + key + "val:" + val);
 
         }
         //获取servlet名称

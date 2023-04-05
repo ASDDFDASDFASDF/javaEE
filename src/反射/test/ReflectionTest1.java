@@ -4,7 +4,6 @@ import java.lang.reflect.InvocationTargetException;
 
 /**
  * 使用反射创建无参构造对象
- *
  */
 public class ReflectionTest1 {
     public static void main(String[] args) throws ClassNotFoundException, IllegalAccessException, InstantiationException, NoSuchMethodException, InvocationTargetException {

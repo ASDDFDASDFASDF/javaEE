@@ -1,7 +1,6 @@
 package com.hyh.atomic;
 
 
-
 public class AtomicDemo {
 
     public static void main(String[] args) {

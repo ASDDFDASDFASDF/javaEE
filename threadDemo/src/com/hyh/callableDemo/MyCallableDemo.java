@@ -9,7 +9,7 @@ public class MyCallableDemo {
         FutureTask task = new FutureTask(c1);
         new Thread(task).start();
 
-        String str  = (String) task.get();
+        String str = (String) task.get();
         System.out.println(str);
     }
 }

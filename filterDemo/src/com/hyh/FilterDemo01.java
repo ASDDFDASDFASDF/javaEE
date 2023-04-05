@@ -11,6 +11,6 @@ public class FilterDemo01 implements Filter {
     public void doFilter(ServletRequest req, ServletResponse res, FilterChain filterChain) throws IOException, ServletException {
 
         res.setContentType("text/html;charset=utf-8");
-        filterChain.doFilter(req,res);
+        filterChain.doFilter(req, res);
     }
 }

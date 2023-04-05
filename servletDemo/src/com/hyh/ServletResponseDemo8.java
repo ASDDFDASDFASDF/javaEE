@@ -21,10 +21,10 @@ public class ServletResponseDemo8 extends HttpServlet {
 
         BufferedInputStream bis = new BufferedInputStream(new FileInputStream("E:\\照片\\微信图片_20180129205906.jpg"));
         ServletOutputStream outputStream = resp.getOutputStream();
-        byte[] bytes = new byte[1024*1024];
+        byte[] bytes = new byte[1024 * 1024];
         int len = 0;
-        while ((len = bis.read(bytes)) != -1){
-            outputStream.write(bytes,0, len);
+        while ((len = bis.read(bytes)) != -1) {
+            outputStream.write(bytes, 0, len);
         }
         bis.close();
 

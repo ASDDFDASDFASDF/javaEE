@@ -11,7 +11,5 @@ public class VolatileDemo {
         t2.start();
 
 
-
-
     }
 }

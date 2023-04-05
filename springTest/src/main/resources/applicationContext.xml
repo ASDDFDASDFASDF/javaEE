@@ -13,13 +13,13 @@
     <bean id="aspect" class="com.hyh.proxy.aop.Aspect"></bean>
 
 
-
     <!--配置织入：告诉spring 那些方法（切点）需要增强-->
     <aop:config>
         <!--声明切面-->
         <aop:aspect ref="aspect">
             <!--切面：切点+通知-->
-            <aop:before method="beforeMethod" pointcut="execution(public void com.hyh.proxy.aop.UserServiceImpl.run())"></aop:before>
+            <aop:before method="beforeMethod"
+                        pointcut="execution(public void com.hyh.proxy.aop.UserServiceImpl.run())"></aop:before>
         </aop:aspect>
     </aop:config>
 

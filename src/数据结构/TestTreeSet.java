@@ -10,13 +10,15 @@ public class TestTreeSet {
         TreeSet<Integer> treeSet = new TreeSet<>(new Comparator<Integer>() {
             @Override
             public int compare(Integer t1, Integer t2) {
-                return t2-t1;
+                return t2 - t1;
             }
         });
 
         //lamda 表达式
-        TreeSet<Integer> treeSet1 = new TreeSet<>(( t1,  t2)->{return t2-t1;});
-        Collections.addAll(treeSet, 23,31,23,43,12,1);
+        TreeSet<Integer> treeSet1 = new TreeSet<>((t1, t2) -> {
+            return t2 - t1;
+        });
+        Collections.addAll(treeSet, 23, 31, 23, 43, 12, 1);
         System.out.println(treeSet);
 
         Predicate<Integer> predicate = new Predicate<Integer>() {

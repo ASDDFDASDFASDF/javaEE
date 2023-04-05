@@ -22,11 +22,11 @@ public class ServletDemo2 extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        doGet(req,resp);
+        doGet(req, resp);
     }
 
     @Override
-    public void destroy(){
+    public void destroy() {
         System.out.println("销毁对象");
     }
 }

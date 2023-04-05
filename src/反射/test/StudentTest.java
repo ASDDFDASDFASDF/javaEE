@@ -22,10 +22,9 @@ public class StudentTest {
         Student student = new Student();
         Class<? extends Student> clazz = student.getClass();
         Method method = clazz.getDeclaredMethod("setName", String.class);
-        method.invoke(student,"小王");
+        method.invoke(student, "小王");
 
         System.out.println(student.getName());
-
 
 
     }

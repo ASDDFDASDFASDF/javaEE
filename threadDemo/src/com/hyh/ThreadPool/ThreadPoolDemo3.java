@@ -18,13 +18,13 @@ public class ThreadPoolDemo3 {
         //6.线程创建方式
         //7.线程数量超出时任务的拒绝策略
         ThreadPoolExecutor threadPoolExecutor = new ThreadPoolExecutor(
-                2,
-                3,
-                2,
-                TimeUnit.SECONDS,
-                new ArrayBlockingQueue(10),
-                Executors.defaultThreadFactory(),
-                new ThreadPoolExecutor.AbortPolicy());
+                  2,
+                  3,
+                  2,
+                  TimeUnit.SECONDS,
+                  new ArrayBlockingQueue(10),
+                  Executors.defaultThreadFactory(),
+                  new ThreadPoolExecutor.AbortPolicy());
         for (int i = 0; i < 20; i++) {
             threadPoolExecutor.submit(new MyRunnabel());
         }

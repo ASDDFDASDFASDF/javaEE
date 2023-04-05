@@ -22,7 +22,7 @@ public class FiledTest {
         Field field = clazz.getDeclaredField("type");
         //使用反射操作属性
         field.setAccessible(true);
-        field.set(o,"哈士奇");//往对象中设置属性值，看着好像反过来了,  dog.type="哈士奇"
+        field.set(o, "哈士奇");//往对象中设置属性值，看着好像反过来了,  dog.type="哈士奇"
 
         Object o1 = field.get(o);//从对象中获取属性值，
         System.out.println(o1);

@@ -2,6 +2,7 @@ package 泛型;
 
 /**
  * 泛型类
+ *
  * @param <T>
  */
 public class GenericDemo<T> {
@@ -17,7 +18,7 @@ public class GenericDemo<T> {
 
 
     //泛型方法
-    public <T> void getName(T t){
+    public <T> void getName(T t) {
         System.out.print(t);
     }
 }

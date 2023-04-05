@@ -11,11 +11,11 @@ public class ThreadPoolDemo {
         ExecutorService executorService = Executors.newCachedThreadPool();//获取一个线程池的控制对象
 
         //默认查看线程池中有没有线程对象，如果有就直接用，没有就重新创建一个。
-        executorService.submit( () -> {
+        executorService.submit(() -> {
             System.out.println(Thread.currentThread().getName());
         });
 //        Thread.sleep(2000);
-        executorService.submit(()->{
+        executorService.submit(() -> {
             System.out.println(Thread.currentThread().getName());
         });
 

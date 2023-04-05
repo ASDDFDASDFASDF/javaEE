@@ -24,7 +24,7 @@ public class ServletRequestDemo6 extends HttpServlet {
         //获取请求描述器
         System.out.println("servletDemo6执行了...");
         RequestDispatcher rd = req.getRequestDispatcher("/servletDemo7");
-        rd.include(req,resp);
+        rd.include(req, resp);
 
 
     }

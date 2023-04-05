@@ -16,7 +16,7 @@ public class TestFileCopy {
         File reFile = new File(resourcePath);
         if (!reFile.exists()) {
             System.out.println("源文件加必须存在");
-            return ;
+            return;
         }
         File taFile = new File(targetPath);
         if (!taFile.exists()) {
@@ -27,9 +27,9 @@ public class TestFileCopy {
         for (File file : files) {
 
             if (file.isDirectory()) {
-                copyDir(resourcePath+file.getName(), targetPath+file.getName());
+                copyDir(resourcePath + file.getName(), targetPath + file.getName());
             } else {
-                copyFile(file.getPath(), targetPath+file.getName());
+                copyFile(file.getPath(), targetPath + file.getName());
             }
         }
     }
@@ -46,9 +46,9 @@ public class TestFileCopy {
 
         for (File file1 : files) {
             if (file1.isDirectory()) {
-                copyDir(resourcePath+"/"+file1.getName(), targetPath+"/"+file1.getName());
+                copyDir(resourcePath + "/" + file1.getName(), targetPath + "/" + file1.getName());
             } else {
-                copyFile(resourcePath+"/"+file1.getName(), targetPath+"/"+file1.getName());
+                copyFile(resourcePath + "/" + file1.getName(), targetPath + "/" + file1.getName());
             }
         }
     }
@@ -67,10 +67,10 @@ public class TestFileCopy {
             BufferedInputStream bis = new BufferedInputStream(new FileInputStream(s));
             BufferedOutputStream bos = new BufferedOutputStream(new FileOutputStream(targetPath));
 
-            byte[] bytes = new byte[1024*1024];
+            byte[] bytes = new byte[1024 * 1024];
             int read = bis.read(bytes);
-            while (read != -1){
-                bos.write(bytes, 0 , read);
+            while (read != -1) {
+                bos.write(bytes, 0, read);
                 read = bis.read(bytes);
             }
             bis.close();

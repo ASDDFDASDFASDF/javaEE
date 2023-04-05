@@ -11,23 +11,28 @@ public class TestArrayList {
 
     }
 }
-class TestList<T>{
+
+class TestList<T> {
     private Object[] obj;
     private int size = 0;
 
 
-    public TestList(int init){
+    public TestList(int init) {
         if (null == obj)
             obj = new Object[init];
     }
 
-    public void add(T t){
+    public void add(T t) {
         if (0 == size)
             obj[size] = t;
 
         ++size;
     }
-    public void delete(){}
-    public void size(){}
+
+    public void delete() {
+    }
+
+    public void size() {
+    }
 
 }

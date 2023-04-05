@@ -19,7 +19,7 @@ public class ProxyHandel {
         enhancer.setSuperclass(us.getClass());
 
         //设置回调
-        enhancer.setCallback(new MethodInterceptor(){
+        enhancer.setCallback(new MethodInterceptor() {
             @Override
             public Object intercept(Object o, Method method, Object[] objects, MethodProxy methodProxy) throws Throwable {
                 jdk.eat();

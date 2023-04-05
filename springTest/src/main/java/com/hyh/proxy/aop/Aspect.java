@@ -2,11 +2,11 @@ package com.hyh.proxy.aop;
 
 public class Aspect {
 
-    public void  beforeMethod(){
+    public void beforeMethod() {
         System.out.println("runing");
     }
 
-    public void eat(){
+    public void eat() {
         System.out.println("aop...eat...");
     }
 }

@@ -18,7 +18,7 @@ public class TestReaderWriterStream {
         char[] chars = new char[1024];
 
         int read = fileReader.read(chars);
-        while (read != -1){
+        while (read != -1) {
             fileWriter.write(chars, 0, read);
             read = fileReader.read(chars);
         }

@@ -13,7 +13,7 @@ public class ProxyHandel {
                   userService.getClass().getInterfaces(),
                   new InvocationHandler() {
                       @Override
-                      public Object invoke(Object proxy, Method method, Object[] args) throws Throwable{
+                      public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
                           jdk.eat();
                           method.invoke(userService, args);
                           jdk.heshui();

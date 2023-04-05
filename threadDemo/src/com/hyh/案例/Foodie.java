@@ -6,7 +6,7 @@ public class Foodie implements Runnable {
     public void run() {
         while (true) {
             synchronized (Desk.obj) {
-                if (Desk.count>0) {//有汉堡
+                if (Desk.count > 0) {//有汉堡
                     System.out.println("汉堡好好吃");
                     Desk.obj.notifyAll();
                     Desk.count--;
