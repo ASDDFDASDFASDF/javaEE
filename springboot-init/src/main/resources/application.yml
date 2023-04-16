@@ -1,0 +1,35 @@
+#spring配置分段方式
+#命令行方式切换配置 java -jar .\springboot-init-0.0.1-SNAPSHOT.jar spring.profile.active=test
+name: abc
+person:
+  name: name1
+  address:
+    - nanjing
+    - beijing
+
+server:
+  servlet:
+    context-path: /test #添加设置项目访问路径
+---
+server:
+  port: 8083
+
+spring:
+  profiles: pro #给每一段起个名字
+---
+server:
+  port: 8084
+
+spring:
+  profiles: test
+---
+server:
+  port: 8085
+
+spring:
+  profiles: dev
+---
+
+spring:
+  profiles:
+    active: pro #激活pro段的配置信息
